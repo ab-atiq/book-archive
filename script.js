@@ -93,10 +93,10 @@ showResult = books => {
         const child = document.createElement('div');
         child.classList.add('card');
         child.classList.add('col-3');
-        child.classList.add('mx-5');
+        child.classList.add('mx-2');
 
         child.innerHTML = `
-        <img src="${coverUrl}" class="card-img-top w-75 h-75 mt-2 rounded mx-auto" alt="Cover Not Available" >
+        <img src="${coverUrl}" class="card-img-top w-90 h-75 mt-2 rounded mx-auto" alt="Cover Not Available" >
         <div class="card-body">
                 <h5 class="card-title">${bookName}</h5>
                 <p class="card-text mb-0"><span class="fw-bold">Author: </span> ${author_name}</p>
@@ -105,7 +105,7 @@ showResult = books => {
                 <p class="card-text mb-0"><span class="fw-bold">First Publish: </span>${first_publish_year}</p>
 
         </div>     
-        `
+        `;
 
         parentDiv.appendChild(child);
     });
